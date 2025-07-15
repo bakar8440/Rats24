@@ -1,0 +1,696 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Rats24</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "construction-grey": "#2D3748",
+              "construction-purple": "#805AD5",
+              "light-grey": "#4A5568",
+              "dark-purple": "#553C9A",
+              "accent-grey": "#718096",
+            },
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav
+      class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300"
+      id="navbar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a
+                href="index.html"
+                class="text-2xl font-bold text-construction-purple">
+                <img src="Image/logo.png" alt="Rats24 Logo" class="h-12" />
+              </a>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="services.html" class="nav-link">Services</a>
+              <a href="projects.html" class="nav-link">Projects</a>
+              <a href="about.html" class="nav-link">About</a>
+              <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              class="mobile-menu-button text-construction-grey hover:text-construction-purple">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu fixed inset-0 z-50 hidden md:hidden">
+        <div
+          class="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300"
+          id="mobileMenuOverlay"></div>
+        <div
+          class="absolute top-0 left-0 w-full bg-white shadow-lg rounded-b-2xl p-8 animate-slide-in-down">
+          <div class="flex justify-between items-center mb-8">
+            <span
+              class="text-2xl font-bold text-construction-purple flex items-center">
+              RATS
+            </span>
+            <button
+              class="mobile-menu-button text-construction-grey hover:text-construction-purple text-3xl focus:outline-none">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <nav class="flex flex-col space-y-2 w-full">
+            <a
+              href="index.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Services</a
+            >
+            <a
+              href="projects.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Projects</a
+            >
+            <a
+              href="about.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-construction-grey via-construction-purple to-dark-purple opacity-90"></div>
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="relative z-10 text-center text-white px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-slide-in-left">
+          Get In <span class="text-purple-300">Touch</span>
+        </h1>
+        <p
+          class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-in-right">
+          Ready to start your construction project? Contact us today for a free
+          consultation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-construction-grey mb-4">
+            Contact Information
+          </h2>
+          <p class="text-xl text-accent-grey max-w-3xl mx-auto">
+            We're here to help you bring your construction vision to life
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          <!-- Contact Information Card -->
+          <div class="flex h-full">
+            <div
+              class="bg-gradient-to-br from-construction-grey/10 to-construction-purple/10 rounded-2xl shadow-2xl p-10 mb-8 animate-slide-in-up flex flex-col justify-between w-full h-full">
+              <h3
+                class="text-2xl font-bold text-construction-purple mb-6 flex items-center">
+                <i class="fas fa-address-book mr-3"></i>Contact Information
+              </h3>
+              <div class="space-y-6 flex-1">
+                <div class="flex items-start">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-construction-grey">
+                      Address
+                    </h4>
+                    <p class="text-accent-grey">Al Karama, Dubai, UAE</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-construction-grey">Phone</h4>
+                    <a
+                      href="tel:+971567216575"
+                      class="text-accent-grey hover:underline"
+                      >+971 56 721 6575</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-construction-grey">Email</h4>
+                    <a
+                      href="mailto:ask@rats24.com"
+                      class="text-accent-grey hover:underline"
+                      >ask@rats24.com</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-construction-grey">
+                      Working Hours
+                    </h4>
+                    <p class="text-accent-grey">
+                      Monday - Friday: 8:00 AM - 6:00 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Message Form Card -->
+          <div class="flex h-full">
+            <div
+              class="bg-gradient-to-br from-construction-grey/10 to-construction-purple/10 rounded-2xl shadow-2xl p-10 mb-8 animate-slide-in-up flex flex-col justify-between w-full h-full">
+              <h3
+                class="text-3xl font-bold text-construction-purple mb-6 flex items-center justify-center">
+                <i class="fas fa-envelope-open-text mr-3"></i>Send Us a Message
+              </h3>
+              <form
+                class="contact-form flex-1 flex flex-col justify-between"
+                id="contactForm">
+                <div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label class="form-label">First Name *</label>
+                      <input
+                        type="text"
+                        class="form-input"
+                        name="firstName"
+                        required />
+                    </div>
+                    <div>
+                      <label class="form-label">Last Name *</label>
+                      <input
+                        type="text"
+                        class="form-input"
+                        name="lastName"
+                        required />
+                    </div>
+                  </div>
+                  <div class="mb-6">
+                    <label class="form-label">Email *</label>
+                    <input
+                      type="email"
+                      class="form-input"
+                      name="email"
+                      required />
+                  </div>
+                  <div class="mb-6">
+                    <label class="form-label">Phone *</label>
+                    <input
+                      type="tel"
+                      class="form-input"
+                      name="phone"
+                      required />
+                  </div>
+                  <div class="mb-6">
+                    <label class="form-label">Service Type</label>
+                    <select class="form-input" name="projectType">
+                      <option value="">Select Service</option>
+                      <option>Technical Services</option>
+                      <option>Tiles Fixing</option>
+                      <option>Welding & Fabrication</option>
+                      <option>Renovation & Electromechanical Work</option>
+                      <option>Garbage Maintenance</option>
+                      <option>Plumbing & Painting</option>
+                    </select>
+                  </div>
+                  <div class="mb-6">
+                    <label class="form-label">Message *</label>
+                    <textarea
+                      class="form-textarea"
+                      name="message"
+                      rows="4"
+                      placeholder="Tell us about your project or service needs..."
+                      required></textarea>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" class="btn-primary w-full text-lg">
+                    <i class="fas fa-paper-plane mr-2"></i>Send Message
+                  </button>
+                  <p class="text-center text-accent-grey mt-4 text-sm">
+                    Our team will respond within 24 hours. For urgent inquiries,
+                    call us directly.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-construction-grey mb-4">
+            Find Us
+          </h2>
+          <p class="text-xl text-accent-grey max-w-3xl mx-auto">
+            Visit our office or get directions to our location
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14435.078711203294!2d55.29470119170302!3d25.244681442882587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42d7bf391ce5%3A0xc92c59be702d25dd!2sAl%20Karama%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sbd!4v1752513480883!5m2!1sen!2sbd"
+            width="1200"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-construction-grey mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-xl text-accent-grey max-w-3xl mx-auto">
+            Common questions about our services and process
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              How long does a typical project take?
+            </h3>
+            <p class="text-accent-grey">
+              Project timelines vary based on size and complexity. Small
+              projects may take 2-3 months, while large commercial projects can
+              take 12-18 months. We provide detailed timelines during the
+              planning phase.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              Do you provide free consultations?
+            </h3>
+            <p class="text-accent-grey">
+              Yes, we offer free initial consultations to discuss your project
+              requirements, budget, and timeline. This helps us understand your
+              vision and provide accurate estimates.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              What areas do you serve?
+            </h3>
+            <p class="text-accent-grey">
+              We serve the entire metropolitan area and surrounding regions
+              within a 100-mile radius. Contact us to confirm if we cover your
+              specific location.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              Do you handle permits and regulations?
+            </h3>
+            <p class="text-accent-grey">
+              Yes, we handle all necessary permits, zoning requirements, and
+              building code compliance. Our team ensures your project meets all
+              local and state regulations.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              What warranty do you provide?
+            </h3>
+            <p class="text-accent-grey">
+              We provide comprehensive warranties on all our work. Structural
+              elements are covered for 10 years, while finishes and systems have
+              1-5 year warranties depending on the component.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              Can you work with my existing architect?
+            </h3>
+            <p class="text-accent-grey">
+              Absolutely! We work with external architects and designers. We can
+              also provide in-house design services if needed. Our goal is to
+              bring your vision to life regardless of who designed it.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              What types of technical services do you offer?
+            </h3>
+            <p class="text-accent-grey">
+              We provide a wide range of technical services including
+              electrical, mechanical, and general maintenance for residential,
+              commercial, and industrial clients.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              Do you handle tiles fixing for both homes and businesses?
+            </h3>
+            <p class="text-accent-grey">
+              Yes, our tiles fixing services cover both residential and
+              commercial spaces, ensuring professional installation and
+              finishing for floors, walls, kitchens, and bathrooms.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              Can you provide custom welding and fabrication solutions?
+            </h3>
+            <p class="text-accent-grey">
+              Absolutely! We offer custom welding and fabrication for structural
+              steel, decorative metalwork, and on-site repairs tailored to your
+              project needs.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              What does your renovation service include?
+            </h3>
+            <p class="text-accent-grey">
+              Our renovation services include home and office remodeling,
+              painting, finishing, and structural repairs to modernize and
+              upgrade your property.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              How do you manage garbage maintenance?
+            </h3>
+            <p class="text-accent-grey">
+              We provide efficient waste management solutions, including
+              scheduled pickup, disposal, and eco-friendly recycling for
+              residential and commercial clients.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-lg font-semibold text-construction-grey mb-3">
+              Do you offer plumbing and painting for large projects?
+            </h3>
+            <p class="text-accent-grey">
+              Yes, we handle plumbing and painting for projects of all sizes,
+              from single homes to large commercial buildings, ensuring quality
+              and durability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="py-20 bg-gradient-to-r from-construction-grey to-construction-purple">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white mb-6">
+          Ready to Start Your Project?
+        </h2>
+        <p class="text-xl text-purple-200 mb-8 max-w-3xl mx-auto">
+          Let’s Build Something Great Together We're here to listen, help, and
+          make it happen. Whether it's a new project, a quick question, or just
+          a friendly hello — we’d love to hear from you.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="btn-secondary" onclick="scrollToForm()">
+            <i class="fas fa-envelope mr-2"></i>Send Message
+          </button>
+          <button class="btn-primary" onclick="callNow()">
+            <i class="fas fa-phone mr-2"></i>Call Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-construction-grey text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold text-construction-purple mb-4">
+              <i class="fas fa-hammer mr-2"></i>Rats24
+            </h3>
+            <p class="text-gray-300 mb-4">
+              Building the future with innovation, quality, and sustainability
+              at the core of everything we do.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Technical Services</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link">Tiles Fixing</a>
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Welding & Fabrication</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Renovation & Electromechanical Work</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Garbage Maintenance</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Plumbing & Painting</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="about.html" class="footer-link">Our Team</a></li>
+              <li><a href="projects.html" class="footer-link">Projects</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+            <p class="text-gray-300 mb-4">
+              Subscribe to our newsletter for updates and insights.
+            </p>
+            <div class="mb-4 text-center">
+              <h5
+                class="text-xl font-bold text-construction-purple mb-2 animate-slide-in-up">
+                Stay Connected!
+              </h5>
+              <p class="text-accent-grey animate-fade-in">
+                Get exclusive news, tips, and offers straight to your inbox.
+              </p>
+            </div>
+            <form class="newsletter-form" id="contactNewsletterForm">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="newsletter-input"
+                required />
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+          <p class="text-gray-300">&copy; 2025 Rats24. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script>
+      // Contact form handling
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const formData = new FormData(this);
+          const data = Object.fromEntries(formData);
+
+          // Show loading state
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<div class="loading-spinner"></div>';
+          submitBtn.disabled = true;
+
+          // Simulate form submission
+          setTimeout(() => {
+            showNotification(
+              "Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.",
+              "success"
+            );
+            this.reset();
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+          }, 2000);
+        });
+
+      // Newsletter form handling
+      document
+        .getElementById("contactNewsletterForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value;
+          if (email) {
+            try {
+              const response = await fetch(
+                "http://localhost:3001/api/newsletter",
+                {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ email }),
+                }
+              );
+              if (response.ok) {
+                showNotification(
+                  "Thank you for subscribing to our newsletter!",
+                  "success"
+                );
+                this.reset();
+              } else {
+                showNotification(
+                  "Subscription failed. Please try again later.",
+                  "error"
+                );
+              }
+            } catch {
+              showNotification(
+                "Subscription failed. Please try again later.",
+                "error"
+              );
+            }
+          }
+        });
+
+      // Utility functions
+      function scrollToForm() {
+        document
+          .querySelector(".contact-form")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      function callNow() {
+        window.location.href = "tel:+971567216575";
+      }
+
+      // Show notification function (if not already defined in scripts.js)
+      if (typeof showNotification === "undefined") {
+        window.showNotification = function (message, type = "info") {
+          const notification = document.createElement("div");
+          notification.className = `notification ${type}`;
+          notification.innerHTML = `
+                    <div class="flex items-center">
+                        <i class="fas fa-${
+                          type === "success" ? "check-circle" : "info-circle"
+                        } text-${
+            type === "success" ? "green" : "blue"
+          }-500 mr-3"></i>
+                        <span>${message}</span>
+                        <button class="ml-auto text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                `;
+
+          document.body.appendChild(notification);
+
+          setTimeout(() => notification.classList.add("show"), 100);
+
+          setTimeout(() => {
+            notification.classList.remove("show");
+            setTimeout(() => notification.remove(), 300);
+          }, 5000);
+
+          const closeBtn = notification.querySelector("button");
+          closeBtn.addEventListener("click", () => {
+            notification.classList.remove("show");
+            setTimeout(() => notification.remove(), 300);
+          });
+        };
+      }
+    </script>
+  </body>
+</html>

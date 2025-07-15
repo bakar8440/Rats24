@@ -1,0 +1,542 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Rats24</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "construction-grey": "#2D3748",
+              "construction-purple": "#805AD5",
+              "light-grey": "#4A5568",
+              "dark-purple": "#553C9A",
+              "accent-grey": "#718096",
+            },
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav
+      class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300"
+      id="navbar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a
+                href="index.html"
+                class="text-2xl font-bold text-construction-purple">
+                <img src="Image/logo.png" alt="Rats24 Logo" class="h-12" />
+              </a>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="services.html" class="nav-link">Services</a>
+              <a href="projects.html" class="nav-link">Projects</a>
+              <a href="about.html" class="nav-link active">About</a>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              class="mobile-menu-button text-construction-grey hover:text-construction-purple">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu fixed inset-0 z-50 hidden md:hidden">
+        <div
+          class="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300"
+          id="mobileMenuOverlay"></div>
+        <div
+          class="absolute top-0 left-0 w-full bg-white shadow-lg rounded-b-2xl p-8 animate-slide-in-down">
+          <div class="flex justify-between items-center mb-8">
+            <span
+              class="text-2xl font-bold text-construction-purple flex items-center">
+              RATS
+            </span>
+            <button
+              class="mobile-menu-button text-construction-grey hover:text-construction-purple text-3xl focus:outline-none">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <nav class="flex flex-col space-y-2 w-full">
+            <a
+              href="index.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Services</a
+            >
+            <a
+              href="projects.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Projects</a
+            >
+            <a
+              href="about.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-construction-grey via-construction-purple to-dark-purple opacity-90"></div>
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="relative z-10 text-center text-white px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-slide-in-left">
+          About <span class="text-purple-300">Rats24</span>
+        </h1>
+        <p
+          class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-in-right">
+          Building excellence through innovation, quality, and dedication since
+          2025
+        </p>
+      </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-bold text-construction-grey mb-6">
+              Our Story
+            </h2>
+            <p class="text-lg text-accent-grey mb-6">
+              We are a collection of multi-technical and engineering services
+              based in Dubai. We continuously strive to deliver the best service
+              possible.
+            </p>
+            <p class="text-lg text-accent-grey mb-6">
+              We recruit laborers from all around the world, primarily India, to
+              acquire the best outcomes possible from them.
+            </p>
+            <p class="text-lg text-accent-grey mb-6">
+              We think that learning never stops, therefore we pair our staff
+              with the best educators in their industries.
+            </p>
+            <p class="text-lg text-accent-grey mb-6">
+              We mostly work with tiles, welding and fabrication, parking shied,
+              wallpaper, plumbing, and villa renovations, as well as painting
+              contracts. We also undertake garbage maintenance automation.
+            </p>
+            <p class="text-lg text-accent-grey mb-6">
+              We have three distinct departments: technical services,
+              engineering work, and garbage maintenance.
+            </p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="stat-card">
+                <div class="text-3xl font-bold text-construction-purple">
+                  4+
+                </div>
+                <div class="text-accent-grey">Years Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="text-3xl font-bold text-construction-purple">
+                  20+
+                </div>
+                <div class="text-accent-grey">Projects Completed</div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              alt="Construction Team"
+              class="rounded-lg shadow-xl" />
+            <div
+              class="absolute -bottom-6 -left-6 bg-construction-purple text-white p-6 rounded-lg">
+              <div class="text-2xl font-bold">4+</div>
+              <div class="text-sm">Years of Excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-construction-grey mb-4">
+            Our Mission & Values
+          </h2>
+          <p class="text-xl text-accent-grey max-w-3xl mx-auto">
+            We are driven by our commitment to excellence and our core values
+            that guide everything we do.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-star text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Excellence</h3>
+            <p class="text-accent-grey">
+              We strive for excellence in every project, no matter the size or
+              complexity.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-handshake text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Integrity</h3>
+            <p class="text-accent-grey">
+              Honesty, transparency, and ethical practices are the foundation of
+              our business.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+            <p class="text-accent-grey">
+              We embrace new technologies and methods to deliver better results.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-users text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Teamwork</h3>
+            <p class="text-accent-grey">
+              Collaboration and mutual respect drive our success and project
+              outcomes.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-leaf text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Sustainability</h3>
+            <p class="text-accent-grey">
+              Environmental responsibility guides our construction practices and
+              material choices.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-heart text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Customer Focus</h3>
+            <p class="text-accent-grey">
+              Our clients' satisfaction and success are our top priorities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-construction-grey mb-4">
+            Our Leadership Team
+          </h2>
+          <p class="text-xl text-accent-grey max-w-3xl mx-auto">
+            Meet the experienced professionals who lead our company and drive
+            our success.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="team-card animate-slide-in-up hover-lift"
+            style="animation-delay: 0.1s">
+            <div class="team-image">
+              <img src="Image/DMD.jpg" alt="COO" class="team-photo" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-2">Showaib Uddin</h3>
+              <p class="text-construction-purple font-semibold mb-3">DMD</p>
+              <p class="text-accent-grey text-sm">
+                Leads innovation initiatives and technology integration across
+                all projects.
+              </p>
+              <div class="flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  class="text-construction-purple hover:text-dark-purple">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-construction-purple hover:text-dark-purple">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-card animate-slide-in-up hover-lift"
+            style="animation-delay: 0.3s">
+            <div class="team-image">
+              <img src="Image/CEO1.jpg" alt="CEO" class="team-photo" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-2">MD Forhad Hossain</h3>
+              <p class="text-construction-purple font-semibold mb-3">
+                CEO & Founder
+              </p>
+              <p class="text-accent-grey text-sm">
+                5+ years of construction industry experience. Led the company
+                from startup to regional leader.
+              </p>
+              <div class="flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  class="text-construction-purple hover:text-dark-purple">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="forhadhossin@rats24.com"
+                  class="text-construction-purple hover:text-dark-purple">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-card animate-slide-in-up hover-lift"
+            style="animation-delay: 0.5s">
+            <div class="team-image">
+              <img src="Image/Pmanager.jpg" alt="CTO" class="team-photo" />
+            </div>
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-semibold mb-2">Parvez Alam</h3>
+              <p class="text-construction-purple font-semibold mb-3">
+                Project Manager
+              </p>
+              <p class="text-accent-grey text-sm">
+                Expert in project management and operations. Ensures smooth
+                execution of all projects.
+              </p>
+              <div class="flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  class="text-construction-purple hover:text-dark-purple">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-construction-purple hover:text-dark-purple">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="py-20 bg-gradient-to-r from-construction-grey to-construction-purple">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white mb-6">
+          Ready to Work With Us?
+        </h2>
+        <p class="text-xl text-purple-200 mb-8 max-w-3xl mx-auto">
+          Join hundreds of satisfied clients who have trusted Rats24 with their
+          construction projects.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="btn-secondary">
+            <i class="fas fa-phone mr-2"></i>Call Now
+          </button>
+          <button class="btn-primary">
+            <i class="fas fa-envelope mr-2"></i>Get Quote
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-construction-grey text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold text-construction-purple mb-4">
+              <i class="fas fa-hammer mr-2"></i>Rats24
+            </h3>
+            <p class="text-gray-300 mb-4">
+              Building the future with innovation, quality, and sustainability
+              at the core of everything we do.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Technical Services</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link">Tiles Fixing</a>
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Welding & Fabrication</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Renovation & Electromechanical Work</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Garbage Maintenance</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Plumbing & Painting</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="about.html" class="footer-link">Our Team</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+              <li><a href="#" class="footer-link">News & Updates</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+            <p class="text-gray-300 mb-4">
+              Subscribe to our newsletter for updates and insights.
+            </p>
+            <div class="mb-4 text-center">
+              <h5
+                class="text-xl font-bold text-construction-purple mb-2 animate-slide-in-up">
+                Stay Connected!
+              </h5>
+              <p class="text-accent-grey animate-fade-in">
+                Get exclusive news, tips, and offers straight to your inbox.
+              </p>
+            </div>
+            <form class="newsletter-form" id="aboutNewsletterForm">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="newsletter-input"
+                required />
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+          <p class="text-gray-300">&copy; 2025 Rats24. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script>
+      document
+        .getElementById("aboutNewsletterForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value;
+          if (email) {
+            try {
+              const response = await fetch(
+                "http://localhost:3001/api/newsletter",
+                {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ email }),
+                }
+              );
+              if (response.ok) {
+                showNotification(
+                  "Thank you for subscribing to our newsletter!",
+                  "success"
+                );
+                this.reset();
+              } else {
+                showNotification(
+                  "Subscription failed. Please try again later.",
+                  "error"
+                );
+              }
+            } catch {
+              showNotification(
+                "Subscription failed. Please try again later.",
+                "error"
+              );
+            }
+          }
+        });
+    </script>
+  </body>
+</html>

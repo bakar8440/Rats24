@@ -1,0 +1,768 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Rats24</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "construction-grey": "#2D3748",
+              "construction-purple": "#805AD5",
+              "light-grey": "#4A5568",
+              "dark-purple": "#553C9A",
+              "accent-grey": "#718096",
+            },
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav
+      class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300"
+      id="navbar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a
+                href="index.html"
+                class="text-2xl font-bold text-construction-purple">
+                <img src="Image/logo.png" alt="Rats24 Logo" class="h-12" />
+              </a>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="services.html" class="nav-link active">Services</a>
+              <a href="projects.html" class="nav-link">Projects</a>
+              <a href="about.html" class="nav-link">About</a>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              class="mobile-menu-button text-construction-grey hover:text-construction-purple">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu fixed inset-0 z-50 hidden md:hidden">
+        <div
+          class="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300"
+          id="mobileMenuOverlay"></div>
+        <div
+          class="absolute top-0 left-0 w-full bg-white shadow-lg rounded-b-2xl p-8 animate-slide-in-down">
+          <div class="flex justify-between items-center mb-8">
+            <span
+              class="text-2xl font-bold text-construction-purple flex items-center">
+              RATS
+            </span>
+            <button
+              class="mobile-menu-button text-construction-grey hover:text-construction-purple text-3xl focus:outline-none">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <nav class="flex flex-col space-y-2 w-full">
+            <a
+              href="index.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Services</a
+            >
+            <a
+              href="projects.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Projects</a
+            >
+            <a
+              href="about.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="mobile-nav-link w-full block text-lg font-semibold text-construction-grey hover:text-construction-purple transition-all duration-200 text-left"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-construction-grey via-construction-purple to-dark-purple opacity-90"></div>
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="relative z-10 text-center text-white px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-slide-in-left">
+          Our <span class="text-purple-300">Services</span>
+        </h1>
+        <p
+          class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-in-right">
+          Comprehensive construction solutions tailored to your needs
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-construction-grey mb-4">
+            What We Offer
+          </h2>
+          <p class="text-xl text-accent-grey max-w-3xl mx-auto">
+            From concept to completion, we provide end-to-end construction
+            services with unmatched quality and expertise.
+          </p>
+        </div>
+
+        <!-- Service Categories -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <!-- Plumbing & Painting -->
+          <div
+            class="service-category-card animate-slide-in-up"
+            style="animation-delay: 0.6s">
+            <img
+              src="Image/paint.jpg"
+              alt="Plumbing & Painting"
+              class="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 class="text-xl font-semibold mb-2 text-center">
+              Plumbing & Painting
+            </h3>
+            <p class="text-accent-grey text-center mb-4">
+              Comprehensive Plumbing and Painting services.
+            </p>
+          </div>
+          <!-- Renovation -->
+          <div
+            class="service-category-card animate-slide-in-up"
+            style="animation-delay: 0.4s">
+            <img
+              src="Image/renov.jpg"
+              alt="Renovation"
+              class="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 class="text-xl font-semibold mb-2 text-center">
+              Renovation & Electromechanical Work
+            </h3>
+            <p class="text-accent-grey text-center mb-4">
+              Comprehensive renovation & electromechanical work and maintenance
+              services.
+            </p>
+          </div>
+          <!-- Technical Services -->
+          <div
+            class="service-category-card animate-slide-in-up"
+            style="animation-delay: 0.1s">
+            <img
+              src="Image/techserv.jpg"
+              alt="Technical Services"
+              class="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 class="text-xl font-semibold mb-2 text-center">
+              Technical Services
+            </h3>
+            <p class="text-accent-grey text-center mb-4">
+              Providing state-of-the-art technical services for various
+              industries.
+            </p>
+          </div>
+          <!-- Tiles Fixing -->
+          <div
+            class="service-category-card animate-slide-in-up"
+            style="animation-delay: 0.2s">
+            <img
+              src="Image/tiles.jpg"
+              alt="Tiles Fixing"
+              class="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 class="text-xl font-semibold mb-2 text-center">Tiles Fixing</h3>
+            <p class="text-accent-grey text-center mb-4">
+              Professional and durable tiles fixing services.
+            </p>
+          </div>
+          <!-- Welding & Fabrication -->
+          <div
+            class="service-category-card animate-slide-in-up"
+            style="animation-delay: 0.3s">
+            <img
+              src="Image/weld.jpg"
+              alt="Welding & Fabrication"
+              class="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 class="text-xl font-semibold mb-2 text-center">
+              Welding & Fabrication
+            </h3>
+            <p class="text-accent-grey text-center mb-4">
+              Custom welding and fabrication services for all your needs.
+            </p>
+          </div>
+
+          <!-- Garbage Maintenance -->
+          <div
+            class="service-category-card animate-slide-in-up"
+            style="animation-delay: 0.5s">
+            <img
+              src="Image/garv.jpg"
+              alt="Garbage Maintenance"
+              class="w-full h-48 object-cover rounded-t-lg mb-4" />
+            <h3 class="text-xl font-semibold mb-2 text-center">
+              Garbage Maintenance
+            </h3>
+            <p class="text-accent-grey text-center mb-4">
+              Efficient waste management and garbage maintenance services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-construction-grey mb-4">
+            Service Details
+          </h2>
+          <p class="text-xl text-accent-grey max-w-3xl mx-auto">
+            Explore our comprehensive range of construction services
+          </p>
+        </div>
+
+        <!-- Service Tabs -->
+        <div class="mb-12">
+          <div class="flex flex-wrap justify-center gap-4" id="service-tabs">
+            <button class="service-tab" data-service="plumbing">
+              <i class="fas fa-paint-roller mr-2"></i>Plumbing & Painting
+            </button>
+            <button class="service-tab" data-service="renovation">
+              <i class="fas fa-sync-alt mr-2"></i>Renovation & Electromechanical
+              Work
+            </button>
+            <button class="service-tab active" data-service="technical">
+              <i class="fas fa-tools mr-2"></i>Technical Services
+            </button>
+            <button class="service-tab" data-service="tiles">
+              <i class="fas fa-th-large mr-2"></i>Tiles Fixing
+            </button>
+            <button class="service-tab" data-service="welding">
+              <i class="fas fa-industry mr-2"></i>Welding & Fabrication
+            </button>
+
+            <button class="service-tab" data-service="garbage">
+              <i class="fas fa-trash-alt mr-2"></i>Garbage Maintenance
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Content Cards Start -->
+        <div class="space-y-8">
+          <!-- Plumbing & Painting -->
+          <div
+            class="bg-white rounded-2xl shadow-2xl p-6 flex flex-col lg:flex-row items-stretch min-h-[480px]">
+            <div
+              class="flex-1 flex flex-col items-center lg:items-start justify-center lg:justify-start lg:pr-8">
+              <img
+                src="Image//rats24_pic/Plumbing.webp"
+                alt="Plumbing & Painting"
+                class="rounded-lg shadow-xl w-full h-48 lg:h-80 object-cover mb-4 lg:mb-0" />
+              <div
+                class="bg-construction-purple text-white p-4 rounded-lg w-full text-center mb-4 lg:mb-0 lg:w-60 lg:text-left lg:mt-4">
+                <div class="text-2xl font-bold">10+</div>
+                <div class="text-sm">Plumbing & Painting Projects</div>
+              </div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-center items-center lg:items-start mt-4 lg:mt-0">
+              <h3
+                class="text-2xl font-bold text-construction-grey mb-2 flex items-center justify-center lg:justify-start">
+                <i class="fas fa-paint-roller text-construction-purple mr-2"></i
+                >Plumbing & Painting
+              </h3>
+              <p
+                class="text-base text-accent-grey mb-4 text-center lg:text-left">
+                Comprehensive plumbing and painting services for residential and
+                commercial properties, ensuring quality and durability.
+              </p>
+              <ul class="space-y-2 mb-4 w-full">
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Leak Repairs & Installations
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Interior & Exterior Painting
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Waterproofing Solutions
+                </li>
+              </ul>
+              <button class="btn-primary w-full lg:w-max">
+                <i class="fas fa-phone mr-2"></i>Get Quote
+              </button>
+            </div>
+          </div>
+          <!-- Renovation -->
+          <div
+            class="bg-white rounded-2xl shadow-2xl p-6 flex flex-col lg:flex-row items-stretch min-h-[480px]">
+            <div
+              class="flex-1 flex flex-col items-center lg:items-start justify-center lg:justify-start lg:pr-8">
+              <img
+                src="Image/elec2.jpg"
+                alt="Renovation"
+                class="rounded-lg shadow-xl w-full h-48 lg:h-80 object-cover mb-4 lg:mb-0" />
+              <div
+                class="bg-construction-purple text-white p-4 rounded-lg w-full text-center mb-4 lg:mb-0 lg:w-60 lg:text-left lg:mt-4">
+                <div class="text-2xl font-bold">10+</div>
+                <div class="text-sm">
+                  Renovation & Electromechanical Work Projects
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-center items-center lg:items-start mt-4 lg:mt-0">
+              <h3
+                class="text-2xl font-bold text-construction-grey mb-2 flex items-center justify-center lg:justify-start">
+                <i class="fas fa-sync-alt text-construction-purple mr-2"></i
+                >Renovation & Electromechanical Work
+              </h3>
+              <p
+                class="text-base text-accent-grey mb-4 text-center lg:text-left">
+                Comprehensive renovation and maintenance services to restore,
+                upgrade, and modernize your property.
+              </p>
+              <ul class="space-y-2 mb-4 w-full">
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Home & Office Renovation & Electromechanical Work
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Painting & Finishing
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Structural Repairs
+                </li>
+              </ul>
+              <button class="btn-primary w-full lg:w-max">
+                <i class="fas fa-phone mr-2"></i>Get Quote
+              </button>
+            </div>
+          </div>
+          <!-- Technical Services -->
+          <div
+            class="bg-white rounded-2xl shadow-2xl p-6 flex flex-col lg:flex-row items-stretch min-h-[480px]">
+            <div
+              class="flex-1 flex flex-col items-center lg:items-start justify-center lg:justify-start lg:pr-8">
+              <img
+                src="Image/rats24_pic/Technical .jpeg"
+                alt="Technical Services"
+                class="rounded-lg shadow-xl w-full h-48 lg:h-80 object-cover mb-4 lg:mb-0" />
+              <div
+                class="bg-construction-purple text-white p-4 rounded-lg w-full text-center mb-4 lg:mb-0 lg:w-60 lg:text-left lg:mt-4">
+                <div class="text-2xl font-bold">10+</div>
+                <div class="text-sm">Technical Projects</div>
+              </div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-center items-center lg:items-start mt-4 lg:mt-0">
+              <h3
+                class="text-2xl font-bold text-construction-grey mb-2 flex items-center justify-center lg:justify-start">
+                <i class="fas fa-tools text-construction-purple mr-2"></i
+                >Technical Services
+              </h3>
+              <p
+                class="text-base text-accent-grey mb-4 text-center lg:text-left">
+                Providing state-of-the-art technical services for various
+                industries, including electrical, mechanical, and general
+                maintenance solutions.
+              </p>
+              <ul class="space-y-2 mb-4 w-full">
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Electrical & Mechanical Works
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >General Maintenance
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Facility Management
+                </li>
+              </ul>
+              <button class="btn-primary w-full lg:w-max">
+                <i class="fas fa-phone mr-2"></i>Get Quote
+              </button>
+            </div>
+          </div>
+          <!-- Tiles Fixing -->
+          <div
+            class="bg-white rounded-2xl shadow-2xl p-6 flex flex-col lg:flex-row items-stretch min-h-[480px]">
+            <div
+              class="flex-1 flex flex-col items-center lg:items-start justify-center lg:justify-start lg:pr-8">
+              <img
+                src="Image/tiles.webp"
+                alt="Tiles Fixing"
+                class="rounded-lg shadow-xl w-full h-48 lg:h-80 object-cover mb-4 lg:mb-0" />
+              <div
+                class="bg-construction-purple text-white p-4 rounded-lg w-full text-center mb-4 lg:mb-0 lg:w-60 lg:text-left lg:mt-4">
+                <div class="text-2xl font-bold">10+</div>
+                <div class="text-sm">Tile Projects</div>
+              </div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-center items-center lg:items-start mt-4 lg:mt-0">
+              <h3
+                class="text-2xl font-bold text-construction-grey mb-2 flex items-center justify-center lg:justify-start">
+                <i class="fas fa-th-large text-construction-purple mr-2"></i
+                >Tiles Fixing
+              </h3>
+              <p
+                class="text-base text-accent-grey mb-4 text-center lg:text-left">
+                Professional and durable tiles fixing services for residential
+                and commercial spaces, ensuring perfect alignment and finish.
+              </p>
+              <ul class="space-y-2 mb-4 w-full">
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Floor & Wall Tiling
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Bathroom & Kitchen Tiles
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Grouting & Waterproofing
+                </li>
+              </ul>
+              <button class="btn-primary w-full lg:w-max">
+                <i class="fas fa-phone mr-2"></i>Get Quote
+              </button>
+            </div>
+          </div>
+          <!-- Welding & Fabrication -->
+          <div
+            class="bg-white rounded-2xl shadow-2xl p-6 flex flex-col lg:flex-row items-stretch min-h-[480px]">
+            <div
+              class="flex-1 flex flex-col items-center lg:items-start justify-center lg:justify-start lg:pr-8">
+              <img
+                src="Image/rats24_pic/welding-fabrication.webp"
+                alt="Welding & Fabrication"
+                class="rounded-lg shadow-xl w-full h-48 lg:h-80 object-cover mb-4 lg:mb-0" />
+              <div
+                class="bg-construction-purple text-white p-4 rounded-lg w-full text-center mb-4 lg:mb-0 lg:w-60 lg:text-left lg:mt-4">
+                <div class="text-2xl font-bold">10+</div>
+                <div class="text-sm">Welding Projects</div>
+              </div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-center items-center lg:items-start mt-4 lg:mt-0">
+              <h3
+                class="text-2xl font-bold text-construction-grey mb-2 flex items-center justify-center lg:justify-start">
+                <i class="fas fa-industry text-construction-purple mr-2"></i
+                >Welding & Fabrication
+              </h3>
+              <p
+                class="text-base text-accent-grey mb-4 text-center lg:text-left">
+                Custom welding and fabrication services for all your needs, from
+                structural steel to decorative metalwork.
+              </p>
+              <ul class="space-y-2 mb-4 w-full">
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Structural Welding
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Custom Metal Fabrication
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >On-site Repairs
+                </li>
+              </ul>
+              <button class="btn-primary w-full lg:w-max">
+                <i class="fas fa-phone mr-2"></i>Get Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Garbage Maintenance -->
+          <div
+            class="bg-white rounded-2xl shadow-2xl p-6 flex flex-col lg:flex-row items-stretch min-h-[480px]">
+            <div
+              class="flex-1 flex flex-col items-center lg:items-start justify-center lg:justify-start lg:pr-8">
+              <img
+                src="Image/garv.jpg"
+                alt="Garbage Maintenance"
+                class="rounded-lg shadow-xl w-full h-48 lg:h-80 object-cover mb-4 lg:mb-0" />
+              <div
+                class="bg-construction-purple text-white p-4 rounded-lg w-full text-center mb-4 lg:mb-0 lg:w-60 lg:text-left lg:mt-4">
+                <div class="text-2xl font-bold">10+</div>
+                <div class="text-sm">Waste Projects</div>
+              </div>
+            </div>
+            <div
+              class="flex-1 flex flex-col justify-center items-center lg:items-start mt-4 lg:mt-0">
+              <h3
+                class="text-2xl font-bold text-construction-grey mb-2 flex items-center justify-center lg:justify-start">
+                <i class="fas fa-trash-alt text-construction-purple mr-2"></i
+                >Garbage Maintenance
+              </h3>
+              <p
+                class="text-base text-accent-grey mb-4 text-center lg:text-left">
+                Efficient waste management and garbage maintenance services for
+                clean and healthy environments.
+              </p>
+              <ul class="space-y-2 mb-4 w-full">
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Residential & Commercial Waste
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Scheduled Pickup & Disposal
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fas fa-check-circle text-construction-purple mr-2"></i
+                  >Eco-friendly Solutions
+                </li>
+              </ul>
+              <button class="btn-primary w-full lg:w-max">
+                <i class="fas fa-phone mr-2"></i>Get Quote
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Content Cards End -->
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="py-20 bg-gradient-to-r from-construction-grey to-construction-purple">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white mb-6">
+          Ready to Start Your Project?
+        </h2>
+        <p class="text-xl text-purple-200 mb-8 max-w-3xl mx-auto">
+          Contact us today for a free consultation and quote. Our team is ready
+          to bring your vision to life.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="btn-secondary">
+            <i class="fas fa-phone mr-2"></i>Call Now
+          </button>
+          <button class="btn-primary">
+            <i class="fas fa-envelope mr-2"></i>Get Quote
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-construction-grey text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold text-construction-purple mb-4">
+              <i class="fas fa-hammer mr-2"></i>Rats24
+            </h3>
+            <p class="text-gray-300 mb-4">
+              Building the future with innovation, quality, and sustainability
+              at the core of everything we do.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Technical Services</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link">Tiles Fixing</a>
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Welding & Fabrication</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Renovation & Electromechanical Work</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Garbage Maintenance</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="footer-link"
+                  >Plumbing & Painting</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">Our Team</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+              <li><a href="#" class="footer-link">News & Updates</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+            <p class="text-gray-300 mb-4">
+              Subscribe to our newsletter for updates and insights.
+            </p>
+            <div class="mb-4 text-center">
+              <h5
+                class="text-xl font-bold text-construction-purple mb-2 animate-slide-in-up">
+                Stay Connected!
+              </h5>
+              <p class="text-accent-grey animate-fade-in">
+                Get exclusive news, tips, and offers straight to your inbox.
+              </p>
+            </div>
+            <form class="newsletter-form" id="servicesNewsletterForm">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="newsletter-input"
+                required />
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+          <p class="text-gray-300">&copy; 2025 Rats24. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script>
+      // Service tab functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const serviceTabs = document.querySelectorAll(".service-tab");
+        const serviceContents = document.querySelectorAll(".service-content");
+
+        serviceTabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            const service = tab.dataset.service;
+
+            // Remove active class from all tabs and contents
+            serviceTabs.forEach((t) => t.classList.remove("active"));
+            serviceContents.forEach((c) => c.classList.remove("active"));
+
+            // Add active class to clicked tab and corresponding content
+            tab.classList.add("active");
+            document.getElementById(service).classList.add("active");
+          });
+        });
+      });
+
+      document
+        .getElementById("servicesNewsletterForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value;
+          if (email) {
+            try {
+              const response = await fetch(
+                "http://localhost:3001/api/newsletter",
+                {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ email }),
+                }
+              );
+              if (response.ok) {
+                showNotification(
+                  "Thank you for subscribing to our newsletter!",
+                  "success"
+                );
+                this.reset();
+              } else {
+                showNotification(
+                  "Subscription failed. Please try again later.",
+                  "error"
+                );
+              }
+            } catch {
+              showNotification(
+                "Subscription failed. Please try again later.",
+                "error"
+              );
+            }
+          }
+        });
+    </script>
+  </body>
+</html>
