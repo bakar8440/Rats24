@@ -23,7 +23,7 @@ app.post("/api/contact", async (req, res) => {
   try {
     await transporter.sendMail({
       from: `"${firstName} ${lastName}" <${email}>`,
-      to: "ask@rats24.com", // Your receiving email
+      to: "bakar75060@gmail.com", // Your receiving email
       subject: `New Contact Form Submission (${serviceType || "General"})`,
       text: `
         Name: ${firstName} ${lastName}
