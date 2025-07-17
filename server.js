@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "ask@rats24.com",
-    pass: "dbec kbqn rwpa iegj", // This must be an app password for ask@rats24.com
+    pass: "", // This must be an app password for ask@rats24.com
   },
 });
 
